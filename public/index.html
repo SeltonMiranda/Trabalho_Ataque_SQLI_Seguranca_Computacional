@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amazonia</title>
+    <link rel="icon" type="image/svg" href="./amazon_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <div class="container-logo"">
+            <img src="./amazonia-logo.png" alt="Logo do site" width="128" height="64">
+        </div>
+        <section class="card">
+            <h2>Consulta de produtos</h2>
+
+            <label for="categoria">Categoria</label>
+            <input
+                type="text"
+                id="categoria"
+                value="Eletronicos"
+                placeholder="Digite uma categoria"
+            >
+
+            <label for="modo">Tipo de consulta</label>
+            <select id="modo">
+                <option value="vulneravel">Vulnerável</option>
+                <option value="seguro">Protegida</option>
+            </select>
+
+            <div class="buttons">
+                <button id="consultar">Consultar</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Resultados</h2>
+            <div id="resultado">
+                Nenhuma consulta realizada.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>SQL executado</h2>
+            <pre id="sql">Aguardando consulta...</pre>
+        </section>
+    </main>
+</body>
+</html>

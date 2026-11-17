@@ -1,0 +1,13 @@
+{
+  "name": "sql-injection-demo",
+  "version": "1.0.0",
+  "description": "Demonstração didática de SQL Injection com Node.js e SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0"
+  }
+}
